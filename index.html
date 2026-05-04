@@ -861,7 +861,7 @@
         <div class="panel soft">
           <span class="tagline">First secret</span>
           <h2 class="section-title">Scratch the card.</h2>
-          <p class="section-copy">Secrets don't come unstamped. Please scratch over the card beside to reveal the date.</p>
+          <p class="section-copy">Secrets don't come unstamped. Please scratch over the card to reveal the date.</p>
           <div class="date-actions">
             <button class="btn" id="resetScratch" type="button">Cover it again</button>
             <a class="btn primary" id="calendarLink" href="#" download="Sadia-Fuad-Wedding.ics">Add to calendar</a>
@@ -872,7 +872,7 @@
             <div class="date-reveal">
               <div>
                 <small>The wedding date</small>
-                <strong>25 May<br>2026</strong>
+                <strong>May 25th<br>2026</strong>
                 <span>Monday · Brampton, Ontario</span>
               </div>
             </div>
@@ -906,7 +906,7 @@
         <div class="panel">
           <span class="tagline">Second secret</span>
           <h2 class="section-title">Find the mansion.</h2>
-          <p class="section-copy">Welcome. Let us unlock the doors for you to come in and share a soul in the celebration.</p>
+          <p class="section-copy">Let us now welcome you to our sacred site. Please unlock the doors by touching/clicking on the doorknobs to reveal the venue. Click below for directions.</p>
           <div class="date-actions" style="justify-content:flex-start;">
             <button class="btn" id="copyAddress" type="button">Copy address</button>
             <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Alderlea%20Historic%20Mansion%2C%2040%20Elizabeth%20St%20S%2C%20Brampton%2C%20ON%20L6Y%201R1">Open directions</a>
@@ -1088,7 +1088,7 @@ const RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycbxOE1T87Iv_jtERQ1
         ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
         paintCover(rect.width, rect.height);
         revealed = false;
-        note.textContent = "Drag with your mouse or finger. No silver dust, just pixels.";
+        note.textContent = "Scratch/Drag with your finger or mouse to reveal the secret.";
       }
 
       function paintCover(w, h) {
